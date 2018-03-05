@@ -33,11 +33,22 @@ window = rg.TurtleWindow()
 
 jeff = rg.SimpleTurtle('turtle')
 
-jeff.pen = rg.pen('red',5)
+jeff.pen = rg.Pen('red',5)
+jeff.speed = 20
+jeff.forward(150)
+jeff.left(90)
+jeff.forward(150)
+jeff.left(90)
+jeff.forward(150)
+jeff.left(90)
+jeff.forward(150)
 
+jeff.pen = rg.Pen('blue',10)
 
+jeff.forward(150)
+jeff.left(90)
+jeff.forward(150)
+jeff.left(90)
+jeff.forward(150)
 
-
-
-
-
+window.close_on_mouse_click()
