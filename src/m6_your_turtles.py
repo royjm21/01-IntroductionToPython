@@ -26,4 +26,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #   fixing them at either this session OR at the NEXT session.
 #
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
-###############################################################################
+####################################################################
+import rosegraphics as rg
+

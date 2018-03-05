@@ -149,9 +149,11 @@ rg.SimpleTurtle()
 jeremy = rg.SimpleTurtle()
 jeremy.pen = rg.Pen('blue',40)
 jeremy.forward(125)
-jeremy.left(125)
-jeremy.backward(125)
-jeremy.right(125)
+jeremy.left(90)
+jeremy.forward(125)
+jeremy.right(90)
+jeremy.forward(125)
+
 ###############################################################################
 #
 # Done: 6.
