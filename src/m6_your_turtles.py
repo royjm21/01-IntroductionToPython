@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Jeremy Roy.
 """
 ###############################################################################
-# TODO: 1.
+# Done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   You should have RUN the  m4e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -29,3 +29,44 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ####################################################################
 import rosegraphics as rg
 
+window = rg.TurtleWindow()
+
+trinity = rg.SimpleTurtle('turtle')
+trinity.pen = rg.Pen('purple',10)
+trinity.speed = 25
+
+size = 400
+
+for k in range(15):
+    trinity.draw_regular_polygon(6,size)
+
+    trinity.pen_up()
+    trinity.right(45)
+    trinity.forward(20)
+    trinity.left(45)
+
+    trinity.pen_down()
+
+    size= size - 15
+
+anna = rg.SimpleTurtle()
+anna.pen = rg.Pen("green", 5)
+anna.speed = 10
+
+anna.backward(175)
+
+size = 10
+
+for k in range(29):
+    anna.draw_regular_polygon(10,size)
+
+    anna.pen_up()
+    anna.left(90)
+    anna.backward(15)
+    anna.right(90)
+
+    anna.pen_down()
+
+    size = size + 1
+
+window.close_on_mouse_click()
